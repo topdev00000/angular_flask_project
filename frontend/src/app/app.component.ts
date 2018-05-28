@@ -34,7 +34,7 @@ export class AppComponent {
             })
     }
 
-    ngOnDestroy() {
-        this.routerSub.unsubscribe();
-    }
+    // ngOnDestroy() {
+    //     this.routerSub.unsubscribe();
+    // }
 }
