@@ -15,15 +15,15 @@ export class AppComponent {
 
     private routerSub: Subscription;
 
-    // constructor(private router: Router) {
-    //     // get all routes and add to menuItems array
-    //     this.menuItems = ROUTES.map((route) => {
-    //         return {
-    //             name: route.component && route.data.title,
-    //             route: route.path
-    //         };
-    //     }).slice(0, ROUTES.length - 1);
-    // }
+    constructor(private router: Router) {
+        // get all routes and add to menuItems array
+        this.menuItems = ROUTES.map((route) => {
+            return {
+                name: route.component && route.data.title,
+                route: route.path
+            };
+        }).slice(0, ROUTES.length - 1);
+    }
 
     ngOnInit() {
         // this will always scroll to the top when routing to another page
