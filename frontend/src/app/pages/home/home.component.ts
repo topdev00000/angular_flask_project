@@ -26,10 +26,10 @@ export class HomeComponent implements OnInit {
     ngOnInit() {
     }
 
-    public predictPatient() {
-        this.patientService.predictPatient(this.patient).subscribe((probabilityPredictions) => {
-            this.probabilityPredictions = probabilityPredictions;
-        });
-    }
+    // public predictPatient() {
+    //     this.patientService.predictPatient(this.patient).subscribe((probabilityPredictions) => {
+    //         this.probabilityPredictions = probabilityPredictions;
+    //     });
+    // }
 
 }
