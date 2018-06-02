@@ -6,5 +6,5 @@ export const ROUTES: Routes = [
     {path: 'home', component: HomeComponent, data: {title: 'Home'}},
 
     // default redirect
-    {path: '**', redirectTo: '/home'}
+    // {path: '**', redirectTo: '/home'}
 ];
